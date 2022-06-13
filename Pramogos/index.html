@@ -1,8 +1,61 @@
 <!DOCTYPE html>
 <html>
+  <title>Tauragės vietos</title>
+  <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/972156897568358452/973652310226006076/unknown.png" type="image/png">
   <head>
-    <title>Tauragės vietos</title>
-    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/972156897568358452/973652310226006076/unknown.png" type="image/png">    <meta charset="UTF-8">
+    <script type = "text/javascript">
+      function displayNextImage() {
+          x = (x === images.length - 1) ? 0 : x + 1;
+          document.getElementById("img").src = images[x];
+      }
+
+      function displayPreviousImage() {
+          x = (x <= 0) ? images.length - 1 : x - 1;
+          document.getElementById("img").src = images[x];
+      }
+
+      function startTimer() {
+          setInterval(displayNextImage, 3000);
+      }
+
+      var images = [], x = -1;
+      images[0] = "https://cdn.discordapp.com/attachments/980529103012765768/985945917184180264/tauru_parkas_1.jpg";
+      images[1] = "https://cdn.discordapp.com/attachments/980529103012765768/985945916928315432/tauru_parkas_4.jpg";
+      images[2] = "https://cdn.discordapp.com/attachments/980529103012765768/985945916622115026/tauru_parkas_3.jpg";
+  </script>
+    <style>
+      body, html {
+        height: 100%;
+        margin: 0;
+      }
+      
+      .br {
+        /* The image used */
+        background-image: url("https://cdn.discordapp.com/attachments/972156897568358452/973650118345625600/unknown.png");
+      
+        /* Full height */
+        height: 50%; 
+      
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .img{
+        max-width: 100%;
+        max-height: 100%;
+        height: inherit !important;
+    }
+      </style>
+      
+       
+ </html>
+
+  <div class="bg">
+
+         
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
@@ -15,9 +68,12 @@
     #main {margin-left: 120px}
     /* Remove margins from "page content" on small screens */
     @media only screen and (max-width: 600px) {#main {margin-left: 0}}
-    </style>
+
+ </style>
+
   </head>
-<body class="w3-gray">
+
+<body class="bg">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
@@ -57,27 +113,64 @@
 </div>
 
 <!-- Page Content -->
-<body  background="https://cdn.discordapp.com/attachments/972156897568358452/973650118345625600/unknown.png">
 <div class="w3-padding-large" id="main">
   <header class="w3-container w3-padding-32 w3-center" id="home">
 
   <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-black w3-padding-64" id="about" style="margin-top:350px;">
-    <h2 class="w3-text-light-grey">Informacija</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <h5 class="w3-text-light-grey">
+  <div class="w3-content w3-justify w3-center w3-text-black w3-padding-64" id="about" ">
+    <h5 class="w3-text-black">
  
-    <p>Puslapis sukurtas II kl. Mokinio - Viliaus Eičo
-    </p>
-    <p>Puslapio tikslas suteikti informaciją, atlikti metinį darbą.
-    </p>
+    <h1>Atvykai nepoilsiauti, bet pramogauti? Štai keletas pasiūlymų. 
+      <p>"Taurų Parkas"</p>
+      </h1>
+      <body onload = "startTimer()">   
+        <a href = "http://www.tauruparkas.lt/">
+  <img id="img" src='https://cdn.discordapp.com/attachments/980529103012765768/985945917184180264/tauru_parkas_1.jpg' 
+ 
+  />
+</a>
+<p>Šiandien Taurų nuotykių parko lankytojų skaičius siekia net 30 tūkst. per metus. Nuotykių parke lankytojų laukia 7 skirtingo sudėtingumo trasos: pradedant nuo mažųjų ir baigiant garbaus amžiaus lankytojais. Trasų ilgis siekia net 6 km. Čia lankytojai gali nemokamai vaikščioti po parko teritoriją, kurią sudaro 20 hektarų plotas ir užsiimti pasyviu laisvalaikiu, atrasti savo ramybės kampelį. Parke įrengti įvairūs tilteliai, ir sūpynės, pavėsinės, čia gausu vietinių skulptorių gamintų skulptūrų. Taip pat, be medžiuose įrengtų trasų, mes galime Jums pasiūlyti nakvynę viešbutyje - namelyje medyje arba net 5 vasaros namelius su visais patogumais. Kviečiame patirti smagias pramogas čiuožiant nuo specialiai įrengto čiuožimo kalno arba pasižvalgyti į Taurų parką iš ant kalno esančios XI - XII a. Lietuvos gynybinės pilies.
+
+  Taurų nuotykių parke pagalvota ir apie mažuosius lankytojus. Parke yra įrengta vaikų žaidimų aikštelė, oro pagalvė - batutas ir trasa medžiuose būtent mažiesiems lankytojams. Trasos aukštis iki 2 m., todėl tėveliai nesudėtingai galės padėti savo atžaloms pereiti visas kliūtis.
+  
+  ORE - tai pramogų erdvė vaikams tarp žemės ir dangaus - 250 kv/m ploto batutų zona, alpinizmo sienelė, kūrybinis kampelis bei lavinamųjų ir ekologiškų žaislų spinta - apgalvota ir subalansuota aktyviems bei smalsiems vaikams. Čia šeima gali ne tik kokybiškai praleisti laiką kartu, bet ir švęsti vaiko gimimo dieną - jaukiame kambaryje tik Jums.
+  
+  Kas sakė, kad nuo kalnelio čiuožinėti galima tik žiemą? Mes Jums siūlome neatsisakyti šio malonumo visus metus, bet kokiu oru! Adrenalino fanatikams rekomenduojame šuolį ant oro pagalvės, o ramesnių pojūčių mėgėjams turime pasiūlymą paprastesnę, bet ne prastesnę trasą! Esame visiškai tikri, kad klyksmo niekada nebus per daug! Atvykite, išbandykite ir lai kiti Jums pavydi!
+  </p>
+  <p>Daugiau informacijos rasite nuorodoje, paspaudus ant nuotraukos.</p>
+  <h5 class="w3-text-black">
+ 
+<h1>Tauragės baseinas</h1>
+  </h1>
+      <body onload = "startTimer()">   
+        <a href = "https://tauragesbaseinas.lt/">
+  <img id="img" src='https://tauragesbaseinas.lt/wp-content/uploads/photo-gallery/thumb/119.jpg' 
+  />
+        </a>
+        <p>    2017 metų gruodžio mėnesį pradėti Tauragės baseino statybos darbai, buvo baigti per šiek tiek daugiau nei 2 metus.
+
+          Oficialus baseino atidarymas įvyko 2020 metų rugsėjo 4 dieną. Neatsiradus privačiam baseino valdytojui, bei gavus Lietuvos Respublikos konkurencijos tarybos sutikimą, baseino administravimas 15 metų laikotarpiui patikėtas Tauragės sporto centrui.
+          
+          Baseine galite rasti 25 metrų plaukimo takelius, 3 skirtingas pirtis, baseiną mažiesiems, nusileidimo kalnelį, sūkurinę vonią, bei kitas sveikatingumo ir laisvalaikio pramogas. Klientams sukurta erdvi laukiamoji erdvė, persirengimo kambariai, veikia sulčių baras.</p>
+      </p>
+      <p>Daugiau informacijos rasite nuorodoje, paspaudus ant nuotraukos.
+      </p>
+</div>
+
+       
+    </body>
+ </html>
+
+     
+          </p>
   </h2>
-    
     
 
 
 <!-- END PAGE CONTENT -->
 </div>
-
+</div>
 </body>
 </html>
+    
+</body>
